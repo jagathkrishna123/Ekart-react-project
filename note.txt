@@ -1,0 +1,78 @@
+// import React from 'react'
+// // import Home from './components/Home'
+// // import Counter from './components/Counter'
+// // import Navbar from './components/Navbar'
+// // import DataFetchApi from './components/DataFetchApi'
+// // import TodoApp from './components/TodoApp'
+// // import ContactManager from './components/ContactManager'
+// // import UseReducerExample from './components/UseReducerExample'
+// import Homee from './components/Homee'
+// import Profile from './components/Profile'
+// import { UserProvider } from './context/UserContext'
+// import { ThemeProvider } from './context/ThemeContext'
+// import Footer from './components/Footer'
+// import WithoutUseMemo from './components/WithoutUseMemo'
+// import WithuseMemo from './components/WithuseMemo'
+// import ExpeneceTracker from './components/ExpeneceTracker'
+
+// const App = () => {
+//   //functions.....................
+//   //states..............
+
+//   return (
+//     <div>
+//       {/* <Home/>
+//       <Counter/>
+//       <Navbar/>
+//       <DataFetchApi/>
+//       <TodoApp/>
+//       <ContactManager/>
+//       <UseReducerExample/> */}
+
+//       <UserProvider>
+//         <Homee/>
+//         <Profile/>
+//       </UserProvider>
+
+//       <ThemeProvider>
+//         <Footer/>
+//       </ThemeProvider>
+//       <WithoutUseMemo/>
+//       <WithuseMemo/>
+//       <ExpeneceTracker/>
+
+//     </div>
+//   )
+// }
+
+// export default App
+import React from 'react'
+// import NavBarComp from './components/NavBarComp'
+// import HomeComp from './components/HomeComp'
+// import About from './components/About'
+// import Contact from './components/Contact'
+import { Route, Routes } from 'react-router-dom'
+
+// import NavBarComp from './components/NavBarComp'
+// import UseMemoExmaple from './components/UseMemoExmaple'
+
+
+const App = () => {
+  return (
+    <div>
+      {/* <NavBarComp/>
+      <UseMemoExmaple/> */}
+     <NavBarComp/>
+    
+    
+    
+    <Routes>
+      <Route path="/" element={<HomeComp/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
+    </Routes>
+    </div>
+  )
+}
+
+export default App
